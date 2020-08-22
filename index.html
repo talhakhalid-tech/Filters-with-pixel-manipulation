@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Canvas World</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="filtering-images-canvas"></canvas>
+    <div class="container">
+      <button id="originalbtn">Original</button>
+      <button id="sharpenbtn">Sharpen</button>
+      <button id="blurbtn">Blur</button>
+      <button id="sepiabtn">Sepia</button>
+      <button id="BWbtn">Black & White</button>
+      <button id="negativebtn">Negative</button>
+      <button id="mirrorbtn">Mirroring</button>
+      <button id="sketchbtn">Sketch</button>
+      <form id="brightform">
+        <input
+          id="brightness"
+          type="range"
+          min="-100"
+          max="100"
+          value="0"
+          step="1"
+        />
+        <button>Brightness</button>
+      </form>
+    </div>
+    <script src="canvas-script.js"></script>
+  </body>
+</html>
